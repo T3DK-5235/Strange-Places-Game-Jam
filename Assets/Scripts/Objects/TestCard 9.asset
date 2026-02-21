@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83ff0679cefe26f4a9215ac67ec451cd, type: 3}
-  m_Name: TestCard1 12
+  m_Name: TestCard 9
   m_EditorClassIdentifier: 
-  initialAssessedValue: 12
+  initialAssessedValue: 9
   placeCardSprite: {fileID: 0}
   placeCardDesc: Temp Desc 8
   placeCardTitle: Temp Title 8

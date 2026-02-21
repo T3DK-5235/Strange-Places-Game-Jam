@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Player Stuff")]
     [SerializeField] List<PlayerStatSO> playerList; //A list of the player + 3 other ai character's info
-    [SerializeField] int[] playerTotalBuyIns;
+    int[] playerTotalBuyIns;
     [SerializeField] GameObject playerContainer;
     [SerializeField] GameObject playerInfoPrefab;
     [SerializeField] int defaultStartingMoney = 21000;
@@ -428,9 +428,9 @@ public class GameManager : MonoBehaviour
             // And for round 2, elements 8,9,10,11 are used
             int relevantMoneyCardSO = PLAYER_NUM * currentRoundNum + i;
 
-            TextMeshProUGUI value = newPlaceCardPrefab.transform.GetChild(2).GetComponent<TextMeshProUGUI>();
+            TextMeshProUGUI value = newMoneyCardPrefab.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 
-            value.text = shuffledPlaceCards[relevantPlaceCardSO].initialAssessedValue.ToString();
+            value.text = shuffledMoneyCards[relevantPlaceCardSO].value.ToString();
 
             dealtMoneyCards.Add(newMoneyCardPrefab);
         }
